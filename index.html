@@ -2,361 +2,874 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Vitality Documentation</title>
-
+    <title>Vitality</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/docs.min.css" rel="stylesheet" type="text/css">
-
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="assets/js/plugins/retina/retina.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Default Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+    <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
+<!--
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+-->
+    <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
+<!--
+    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+-->
+    <!-- Plugin CSS -->
+    <link href="assets/css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/background.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/animate.css" rel="stylesheet" type="text/css">
+    <!-- Vitality Theme CSS -->
+    <!-- Uncomment the color scheme you want to use. -->
+    <!-- <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-green.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Custom Docs Styles -->
-    <style>
-    .spacer {
-        height: 750px;
-    }
-    .bs-docs-header {
-        background: url('img/bg.gif') center center scroll repeat;
-        color: #fff;
-    }
-    </style>
-
 </head>
+<!-- Alternate Body Classes: .modern and .vintage -->
 
-<body class="top">
-
-    <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content">
+<body id="page-top">
+    <!-- Navigation -->
+    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
         <div class="container">
-            <h1>Vitality Documentation</h1>
-            <p>An overview of the Vitality theme along with usage instructions for its various components.</p>
-        </div>
-    </div>
-
-    <div class="container bs-docs-container">
-
-        <div class="row">
-
-            <div class="col-md-9" role="main">
-
-                <div class="bs-docs-section">
-
-                    <!-- Introduction Section -->
-                    <h1 id="introduction" class="page-header">Introduction</h1>
-                    <p class="lead">Vitality is a one page website theme built on the Bootstrap framework.</p>
-                    <p>Thank you for purchasing Vitality! These docs provide usage instructions for the various components built into the theme. If you run into any other problems with the theme, or encounter any bugs, please contact Start Bootstrap Themes directly through the contact form on our profile page at WrapBootstrap here: <a href="https://wrapbootstrap.com/user/StartBootstrap">https://wrapbootstrap.com/user/StartBootstrap</a>.</p>
-
-                    <!-- What's Included Section -->
-                    <h1 id="whats-included" class="page-header">What's Included</h1>
-                    <p class="lead">Vitality comes with five different prebuilt sample pages for various types of websites along with ten color schemes.</p>
-                    <p>Vitality is a flexible theme and comes with five different website samples and ten color schemes to start with. The theme also includes LESS files for deeper customization, a working contact form, and a variety of powerful jQuery plugins.</p>
-
-                    <h2 id="whats-included-plugins">Plugins</h2>
-                    <p>The following plugins are used in the Vitality theme. For more detailed usage instructions for each plugin, please visit the plugin website using the links provided below.</p>
-                    <dl>
-                        <dt>Font Awesome</dt>
-                        <dl>The iconic font designed for Bootstrap.<br><a href="http://fontawesome.io/">Plugin Website</a>
-                        </dl>
-                        <dt>Magnific Popup</dt>
-                        <dl>A responsive lightbox &amp; dialog script with focus on performance and providing best experience for user with any device.<br><a href="http://dimsemenov.com/plugins/magnific-popup/">Plugin Website</a>
-                        </dl>
-                        <dt>Owl Carousel</dt>
-                        <dl>A touch enabled jQuery plugin that lets you create beautiful responsive carousel sliders.<br><a href="https://github.com/OwlFonk/OwlCarousel">Plugin Website</a>
-                        </dl>
-                        <dt>Retina.js</dt>
-                        <dl>An open source script that makes it easy to serve high-resolution images to devices with retina displays.<br><a href="http://imulus.github.io/retinajs/">Plugin Website</a>
-                        </dl>
-                        <dt>jq Bootstrap Validation</dt>
-                        <dl>A jQuery valdiation plugin for Bootstrap forms.<br><a href="http://reactiveraven.github.io/jqBootstrapValidation/">Plugin Website</a>
-                        </dl>
-                        <dt>Formstone - Background (Previously Formstone - Wallpaper)</dt>
-                        <dl>A jQuery plugin for smooth-scaling image and video backgrounds.<br><a href="http://formstone.it/components/background/">Plugin Website</a>
-                        </dl>
-                        <dt>WOW.js</dt>
-                        <dl>A jQuery plugin for reveal animations when you scroll.<br><a href="http://mynameismatthieu.com/WOW/">Plugin Website</a>
-                        </dl>
-                        <dt>Animate.css</dt>
-                        <dl>A CSS plugin for CSS animations.<br><a href="http://daneden.github.io/animate.css/">Plugin Website</a>
-                        </dl>
-                    </dl>
-
-                    <div class="bs-callout bs-callout-warning">
-                        <h4>Updating Plugins</h4>
-                        <p>Updating a plugin to a newer version may causes some elements in the theme to malfunction. Please contact Start Bootstrap Themes if you are having a problem updating a plugin and we will update the theme.</p>
-                    </div>
-
-                    <!-- What's Included Section - Color Schemes -->
-                    <h2 id="whats-included-color-schemes">Color Schemes</h2>
-                    <p>Vitality comes built with 10 different color schemes. Each color scheme has it's own CSS file associated with it. After you've picked a color scheme, make sure to uncomment it within the <code>&lt;head&gt;</code> tag. You can use any of the following color schemes:</p>
-                    <ul>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-blue.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-green.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-orange.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-pink.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-purple.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-tan.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                        <li>
-                            <code>&lt;link href="assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"&gt;</code>
-                        </li>
-                    </ul>
-
-                    <div class="bs-callout bs-callout-warning">
-                        <h4>Use Only One Stylesheet</h4>
-                        <p>Make sure to only use <strong>one</strong> of the 10 available stylesheets available!</p>
-                    </div>
-
-                    <!-- What's Included Section - Button Styles -->
-                    <h2 id="whats-included-button-styles">Button Styles</h2>
-                    <p>In addition to the defauly Bootstrap buttons there are two additional button styles that are used in the Vitality theme.</p>
-                    <h4>Dark Outline Button</h4>
-                    <p>For use on light backgrounds. Examples: "Send" button on the contact form, "Sign Up" button on the pricing table.</p>
-                    <pre><code>.btn-outline-dark</code></pre>
-
-                    <h4>Light Outline Button</h4>
-                    <p>For use on dark backgrounds. Example: Call to action buttons, "View Details" buttons on the portfolio section.</p>
-                    <pre><code>.btn-outline-dark</code></pre>
-
-                    <!-- Body Styles Section -->
-                    <h1 id="body-styles" class="page-header">Body Styles</h1>
-                    <p>There are three body styles that you can use with the Vitality theme: default, modern, and vintage. To use the files, all you need to do is change the class of the body tag.</p>
-                    <h4>Default Style</h4>
-                    <p>Raleway heading font with Roboto paragraph font.</p>
-                    <pre><code>&lt;body&gt;</code></pre>
-                    <h4>Modern Style</h4>
-                    <p>Montserrat heading font with Cardo paragraph font.</p>
-                    <pre><code>&lt;body class="modern"&gt;</code></pre>
-                    <p></p>
-                    <h4>Vintage Style</h4>
-                    <p>Sanchez heading font with Cardo paragraph font.</p>
-                    <pre><code>&lt;body class="vintage"&gt;</code></pre>
-
-                    <div class="bs-callout bs-callout-warning">
-                        <h4>Font Dependencies</h4>
-                        <p>Each body style uses different fonts. Check the fonts in the <code>&lt;head&gt;</code> section to make sure you are using the correct fonts for your style.</p>
-                    </div>
-
-                    <!-- Header Section -->
-                    <h1 id="header" class="page-header">Header</h1>
-                    <p>The Vitality header comes with two options. You can either use a background image or a background video.</p>
-
-                    <!-- Header Section - Background Image -->
-                    <h2 id="header-image">Background Image</h2>
-                    <p>The first option for the Vitality header is the use of a background image. The header background image in the sample templates are set using <strong>inline CSS</strong> directly in the document.</p>
-                    <p>To edit the header image, change the path of the background image in the <code>&lt;header&gt;</code> tag. Make sure your image path is correct.</p>
-                    <p><strong>Example: </strong><code>&lt;header style="background-image: url('assets/img/bg-header.jpg')"&gt;</code>.</p>
-
-                    <div class="bs-callout bs-callout-info">
-                        <h4>Background Image Style &amp; Dimensions</h4>
-                        <p>All of the images in the theme samples were edited in Photoshop to have a dark overlay. For optimial legibility on the foreground content, we recommend giving all background images a 50% opacity, black overlay or decreasing the brightness on the image.</p>
-                        <p>Our recommended image dimensions for background images is <strong>1500x1000 pixels</strong>.</p>
-                    </div>
-
-                    <!-- Header Section - Background Video -->
-                    <h2 id="header-video">Background Video</h2>
-                    <p>To configure a background video for your header you will need to configure the Formstone Background plugin in the <code>vitality.js</code> file. You must also be using the header structure used in the <code>video.html</code> sample file. You will also want to edit the file path of the mobile fallback image.</p>
-                    <p><strong>Example:</strong> Edit the <code>poster</code> and <code>mp4</code> file paths in the <code>vitality.js</code> file. Supported file formats are mp4, ogg, and webm. For more information on using the Formstone Background plugin, visit <a href="http://formstone.it/components/background/">http://formstone.it/components/background</a>.</p>
-                    <pre><code>// Formstone Background - Video Background Settings
-$("header.video").background({
-    source: {
-        poster: "assets/img/bg-mobile-fallback.jpg",
-        mp4: "assets/mp4/camera.mp4"
-    }
-});</code></pre>
-
-                    <div class="bs-callout bs-callout-info">
-                        <h4>Video Compression Tip</h4>
-                        <p>When you're using a background video for your header, you want to keep the file size as small as possible so you don't have pauses or stuttering in your video as it plays in the background. A great, open source tool you can use is a program called <a href="https://handbrake.fr/">Handbrake</a>. To compress your video, download Handbrake and run your video through the program with the "Web Optimized" box checked. It can convert a 20MB mp4 video file down to 2MB without quality loss!</p>
-                    </div>
-
-                    <!-- Contact Form Section -->
-                    <h1 id="contact-form" class="page-header">Contact Form</h1>
-                    <p>Vitality includes a working contact form. All of the sample pages, except for the <code>culinary.html</code> sample, include a contact form. In order to activate the form, follow these directions:</p>
-                    <ul>
-                        <li>Open the <code>mail/contact_me.php</code> file.</li>
-                        <li>On line 19, enter the email address you want mail sent to. <code>$to = 'YOUR-EMAIL-ADDRESS@YOUR-DOMAIN.com'; // *REPLACE WITH THE EMAIL ADDRESS YOU WANT THE FORM TO SEND MAIL TO*</code>
-                        </li>
-                        <li>On line 22, enter the email address you want messages sent to you to be from. <code>$headers = "From: noreply@YOUR-DOMAIN.com\n"; // *REPLACE WITH THE EMAIL ADDRESS YOU WANT THE MESSAGE TO BE FROM*</code>. Typically, an email address like noreply@your-domain.com will work here.</li>
-                        <li>Save, and upload the file.</li>
-                    </ul>
-
-                    <div class="bs-callout bs-callout-warning">
-                        <h4>Adding Fields to the Contact Form</h4>
-                        <p>If you want to add fields to the contact form, you will need to edit the <code>mail/contact_me.php</code> file as well as the <code>assets/js/contact_me.js</code> file. Requires basic working knowledge of PHP and JavaScript.</p>
-                    </div>
-
-                    <div class="bs-callout bs-callout-danger">
-                        <h4>If Your Form Isn't Working</h4>
-                        <p>If you have followed the instructions above, and uploaded your website to a <em>live server</em> and the form is still not working then it is likely that your web host is blocking the form from sending messages. In order to troubleshoot form functionality <em>after</em> it's been uploaded it is best to contact your server administrator or web host to see if there are permissions or security features preventing the form from sending, or if the version of PHP on your web server is not compatible with the form scripts.</p>
-                    </div>
-
-                    <!-- MailChimp Form Section -->
-                    <h1 id="mailchimp" class="page-header">MailChimp Signup Form</h1>
-
-                    <p>Vitality now comes with a call to action box that has a built-in MailChimp signup form. All you need to do in order to activate this feature is include your MailChimp form action within the template! Below are the steps on how to do this.</p>
-
-                    <ol>
-                        <li>Log into your MailChimp account.</li>
-                        <li>Go to your lists. This is usually a link on the top menu bar called "Lists"</li>
-                        <li>You will now see your subscriber lists on the screen. On the right hand side of the list there will be a button that says "Stats" and a dropdown arrow. Click on the dropdown arrow to open a menu and select "Signup forms."</li>
-                        <li>Click on the second option that says "Embedded forms"</li>
-                        <li>The embedded forms has multiple formats, but we only need the form action! To get the form action select the "Naked" form option. The other options are Classic, Super Slim, and Advanced.</li>
-                        <li>Once you see the "Naked" form option you will see a preview and an embed code. Copy the embed code and paste it into a blank Notepad or text editor document. The code will have a <code>&lt;form action="..."&gt;</code>. Copy the contents of the form action that is between the quotations, and drop the form action URL into the Vitality template you're using!</li>
-                        <li>Now the form should be working. You can test it by entering an email address and hitting the subscribe button. It should take you to a new window notifying you that you've signed up for the mailing list.</li>
-                    </ol>
-
-                    <div class="bs-callout bs-callout-info">
-                        <h4>Not Using MailChimp?</h4>
-                        <p>If you aren't using MailChimp you can still use the signup form HTML. Just delete references to the MailChimp scripts and use the remaining HTML as a template for your different signup method!</p>
-                    </div>
-
-                    <h1 id="page-scrolling" class="page-header">Smooth Page Scrolling</h1>
-                    <p>As a one page theme, the smooth page scrolling feature is a great way to let your users navigation your content while being contsantly aware of where they are on the page. In order to use the page scroll content, you need a few things. You need a link that you want users to click on to bring them to a section, a unique ID set for the section you want to navigation to, and the <code>page-scroll</code> class added to the link itself.</p>
-                    <p>Here is an example of what a link needs in order to scroll to a section:</p>
-                    <pre><code>&lt;a href="#link" class="page-scroll"&gt;Link Text&lt;/a&gt;</code></pre>
-                    <p>Note the <code>page-scroll</code> class being added to the link. For a more detailed example, see the links in the navigation bar within any of the samples!</p>
-                    <p>Here is an example of what your section should look like that you're linking to with the above link example:</p>
-                    <pre><code>&lt;section id="link"&gt;...&lt;/section&gt;</code></pre>
-                    <p>Note that the section's ID <em>matches</em> the link's destination!</p>
-
-                    <h1 id="retina-images" class="page-header">Retina Images</h1>
-                    <p>The Retina.js jQuery plugin allows for easy retina image support with this theme. The <code>retina.js</code> script checks your server for images with the @2x modifier. If an image exists with the @2x modifier, retina devices will load that image instead of the original.</p>
-                    <p>For example, in our samples, we include a <code>logo.png</code> file in our navigation bar. If you look in the <code>assets/img/</code> folder, you will see two versions of the file: <code>logo.png</code> and <code>logo@2x.png</code>. The difference between the two files is that the <code>logo@2x.png</code> file is <strong>twice the size</strong> of the original file. On retina devices, the @2x file will load in place of the original file, displaying crisp, high quality image.</p>
-                    <p>For more information about using the Retina.js plugin please visit <a href="http://imulus.github.io/retinajs/">http://imulus.github.io/retinajs/</a>.</p>
-
-                    <h1 id="email-support" class="page-header">Email Support</h1>
-                    <p>If you run into problems, bugs, or have general questions about the theme, please feel free to email us using the form on our WrapBootstrap profile page at <strong><a href="https://wrapbootstrap.com/user/StartBootstrap">https://wrapbootstrap.com/user/StartBootstrap</a></strong> and we will attempt to answer your questions. We also offer <strong>custom design services</strong> if you are looking for a customized version of this theme (custom design services are not included with purchase).</p>
-                    <p>Once again, thank you for choosing Vitality, and we wish you the best of luck on many projects to come!</p>
-
-                    <h1 id="versions" class="page-header">Updating Your Version</h1>
-                    <p>Start Bootstrap Themes is always adding new features and making improvements to Vitality! That being said, whenever the theme is updated you will want to update your own website. Referenced below are some changes you might need to make to your own theme if you choose to use the updated files:</p>
-                    <h2 id="versions1">Upgrading to 1.3.3</h2>
-                    <p>In version 1.3.3, a new class was added to distinguish between regular links and links that allow the page to smooth scroll to an anchor point. The best example of this is shown in the navigation menu. Make sure to update any of your links that scroll somewhere on the page by adding the <code>.page-scroll</code> class to them. Below is an example of what a menu bar link looks like in 1.3.x and what the new format is in 1.3.3. Use the below information, along with the theme files, for reference.</p>
-                    <h3>Menu Bar Links in Version 1.x.x</h3>
-                    <pre><code>&lt;li&gt;
-    &lt;a href="about"&gt;About&lt;/a&gt;
-&lt;/li&gt;</code></pre>
-
-                    <h3>Menu Bar Links in Version 1.3.3</h3>
-                    <pre><code>&lt;li&gt;
-    &lt;a class="page-scroll" href="about"&gt;About&lt;/a&gt;
-&lt;/li&gt;</code></pre>
-
-                    <p>Make sure to add the <code>.page-scroll</code> to any link that is smooth scrolling to another ID on the page. This includes the logo in the navigation bar, buttons, and any other elements!</p>
-
-
-                    <div class="spacer"></div>
-
-                </div>
-                <!-- /.bs-docs-section -->
-
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="assets/img/creative/logo.png" class="img-responsive" alt="">
+                </a>
             </div>
-            <!-- /.col-md-9 -->
-
-            <div class="col-md-3">
-                <div class="bs-docs-sidebar">
-                    <ul class="nav bs-docs-sidenav">
-                        <li>
-                            <a href="#introduction">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="#whats-included">What's Included</a>
-                            <ul class="nav">
-                                <li>
-                                    <a href="#whats-included-plugins">Plugins</a>
-                                </li>
-                                <li>
-                                    <a href="#whats-included-color-schemes">Color Schemes</a>
-                                </li>
-                                <li>
-                                    <a href="#whats-included-button-styles">Button Styles</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#body-styles">Body Styles</a>
-                        </li>
-                        <li>
-                            <a href="#header">Header</a>
-                            <ul class="nav">
-                                <li>
-                                    <a href="#header-image">Background Image</a>
-                                </li>
-                                <li>
-                                    <a href="#header-video">Background Video</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#contact-form">Contact Form</a>
-                        </li>
-                        <li>
-                            <a href="#mailchimp">MailChimp Signup <span class="label label-success">New</span></a>
-                        </li>
-                        <li>
-                            <a href="#page-scrolling">Smooth Page Scrolling</a>
-                        </li>
-                        <li>
-                            <a href="#retina-images">Retina Images</a>
-                        </li>
-                        <li>
-                            <a href="#email-support">Email Support</a>
-                        </li>
-                        <li>
-                            <a href="#versions">Updating Your Version</a>
-                            <ul class="nav">
-                                <li>
-                                    <a href="#versions1">Updating to 1.3.3</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <a class="back-to-top" href="#top">Back to top</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#process">Process</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header id="my_header">
+        <div class="intro-content">
+            <img src="assets/img/creative/profile.png" class="img-responsive img-centered" alt="">
+            <div class="brand-name">PINES</div>
+            <hr class="colored">
+            <div class="brand-name-subtext">A Modern, Marketing Solution</div>
+        </div>
+        <div class="scroll-down">
+            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/creative/about.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1>Hi, We are Aaron and Jake</h1>
+                    <h4><em>and this is 54 pines</em></h4>
+                    <hr class="colored">
+                    <p>We are web designers, developers, and overall great guys based in Austin, Texas. We have professional backgrounds in graphic design, front-end development, and CRM.</p>
+                    <p>Whether your next project is an online store, website for your business, or a simple brochure, we'll be ready to help!</p>
                 </div>
             </div>
-            <!-- /.col-md-3 -->
-
         </div>
-        <!-- /.row -->
-
+    </section>
+    <section id="services" class="bg-gray">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h1>This is what I do</h1>
+                    <p>I provide web design, web development, photography, and graphic design services.</p>
+                    <hr class="colored">
+                </div>
+            </div>
+            <div class="row text-center content-row">
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                    <div class="about-content">
+                        <i class="fa fa-laptop fa-4x"></i>
+                        <h3>Web Design</h3>
+                        <p>This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
+                    <div class="about-content">
+                        <i class="fa fa-code fa-4x"></i>
+                        <h3>Web Development</h3>
+                        <p>Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
+                    <div class="about-content">
+                        <i class="fa fa-camera-retro fa-4x"></i>
+                        <h3>Photography</h3>
+                        <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
+                    <div class="about-content">
+                        <i class="fa fa-paint-brush fa-4x"></i>
+                        <h3>Graphic Design</h3>
+                        <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="cta-quote" style="background-image: url('assets/img/creative/satlabmock.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 wow fadeIn">
+                    <span class="quote">Good
+                        <span class="text-primary">design</span> is finding that perfect balance between the way something
+                    <span class="text-primary">looks</span> and how it
+                    <span class="text-primary">functions</span>.</span>
+                    <hr class=" colored">
+                    <a class="btn btn-outline-light page-scroll" href="#contact">Let's Find It</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section id="process" class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h2>My Process</h2>
+                    <hr class="colored">
+                    <p>Here is an overview of how I approach each new project.</p>
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-clipboard"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Plan</h3>
+                            <ul>
+                                <li>Client interview</li>
+                                <li>Gather consumer data</li>
+                                <li>Create content strategy</li>
+                                <li>Analyze research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Create</h3>
+                            <ul>
+                                <li>Build wireframe</li>
+                                <li>Gather client feedback</li>
+                                <li>Code development</li>
+                                <li>Marketing review</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Launch</h3>
+                            <ul>
+                                <li>Deploy website</li>
+                                <li>Market product launch</li>
+                                <li>Collect UX data</li>
+                                <li>Quarterly maintenence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="bg-gray">
+        <div class="container text-center wow fadeIn">
+            <h2>Case Studies</h2>
+            <hr class="colored">
+            <p>Here are some in depth case studies of larger projects that I've worked on in the past.</p>
+        </div>
+    </section>
+    <section class="portfolio-carousel wow fadeIn">
+        <div class="item" style="background-image: url('assets/img/creative/portfolio/bg-1.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('assets/img/creative/portfolio/bg-2.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('assets/img/creative/portfolio/bg-3.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('assets/img/creative/portfolio/bg-4.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container text-center wow fadeIn">
+            <h2>Portfolio</h2>
+            <hr class="colored">
+            <p>Here are some other projects that I've worked on.</p>
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <ul id="filters" class="clearfix">
+                            <li>
+                                <span class="filter active" data-filter="identity graphic logo web">All</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="identity">Identity</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="graphic">Graphic</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="web">Web</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="portfoliolist">
+                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/identity/1.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Generic Inc.</a>
+                                        <span class="text-category">Brand Identity</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/web/1.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Brands</a>
+                                        <span class="text-category">Web Development</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/graphic/1.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Excellence</a>
+                                        <span class="text-category">Poster Design</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio web" data-cat="web" href="#portfolioModal4" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/web/2.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">YouTV</a>
+                                        <span class="text-category">Web Development</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal1" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/graphic/2.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Office Supplies</a>
+                                        <span class="text-category">Graphic Design</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/web/3.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Fooder</a>
+                                        <span class="text-category">Mobile App</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/graphic/3.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Mountain Tea</a>
+                                        <span class="text-category">Graphic Design</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal4" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/graphic/4.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Checkmark</a>
+                                        <span class="text-category">Graphic Design</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/identity/2.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Demish</a>
+                                        <span class="text-category">Brand Identity</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/web/4.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">OneRepublic</a>
+                                        <span class="text-category">Web Development</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/graphic/5.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Postable</a>
+                                        <span class="text-category">Graphic Design</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal4" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/portfolio/grid/identity/3.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Simpli Nota</a>
+                                        <span class="text-category">Brand Identity</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials bg-gray">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="testimonials-carousel">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="lead">"Working with John Smith was both a valuable and rewarding experience."</p>
+                                    <hr class="colored">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <span class="name">Jim Walker</span>
+                                            <p class="small">CEO of GeneriCorp</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="lead">"John is an excellent designer, and we got our project done on time and on budget."</p>
+                                    <hr class="colored">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <span class="name">Jim Walker</span>
+                                            <p class="small">CEO of GeneriCorp</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-form bg-dark">
+        <div class="container text-center">
+            <h3>Subscribe to our newsletter!</h3>
+            <hr class="colored">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <!-- Replace the form action in the line below with your MailChimp embed action! For more informatin on how to do this please visit the Docs! -->
+                        <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                            <div class="input-group input-group-lg">
+                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
+                                </span>
+                            </div>
+                            <div id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End MailChimp Signup Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="colored">
+                    <p>I'd love to hear about your next project! Send me a message and I will see if I can help.</p>
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-outline-dark">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a>
+    <footer class="footer" style="background-image: url('assets/img/bg-footer.jpg')">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-phone"></i> Call</h4>
+                    <p>555-213-4567</p>
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-map-marker"></i> Visit</h4>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-envelope"></i> Email</h4>
+                    <p><a href="mailto:mail@example.com">mail@example.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row social">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-12">
+                    <p class="small">&copy; 2015 Start Bootstrap Themes</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Example Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/creative/portfolio/bg-1.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
-
+    <!-- Example Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/creative/portfolio/bg-2.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Example Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/creative/portfolio/bg-3.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Example Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/creative/portfolio/bg-4.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Core Scripts -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin Scripts -->
+    <script src="assets/js/plugins/jquery.easing.min.js"></script>
+    <script src="assets/js/plugins/classie.js"></script>
+    <script src="assets/js/plugins/cbpAnimatedHeader.js"></script>
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/background/core.js"></script>
+    <script src="assets/js/plugins/background/transition.js"></script>
+    <script src="assets/js/plugins/background/background.js"></script>
+    <script src="assets/js/plugins/jquery.mixitup.js"></script>
+    <script src="assets/js/plugins/wow/wow.min.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+    <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
+    <!-- Vitality Theme Scripts -->
+    <script src="assets/js/vitality.js"></script>
 </body>
 
 </html>
